@@ -41,7 +41,7 @@ function Navbar() {
     <header id='navbar' className='flex justify-around w-full lg:mx-auto h-14'>
       <div className='my-auto'>
         <span className='text-verdant-fg'>
-          ambareesh<span className='text-verdant-blue'>.pages.dev</span>
+          ambareesh<span className='text-verdant-blue'>.me</span>
         </span>
       </div>
       <div className='flex items-center'>
