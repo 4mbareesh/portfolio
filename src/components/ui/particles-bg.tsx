@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import type { Container, RecursivePartial, IOptions } from '@tsparticles/engine'
 import { loadFull } from 'tsparticles'
-import ParticlesConfig from './config/particles-config'
+import ParticlesConfig from '@/config/particles-config'
 
 const options = ParticlesConfig as RecursivePartial<IOptions>
 

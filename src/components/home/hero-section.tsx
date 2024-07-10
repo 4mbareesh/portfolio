@@ -1,7 +1,7 @@
-import Button from './Button'
+import Button from '../ui/button'
 // import Image from 'next/image'
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <main id='main' className='flex justify-center flex-grow '>
       <div className='container flex flex-col items-center justify-around mx-auto md:flex-row '>
@@ -172,4 +172,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroSection
