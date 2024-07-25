@@ -1,6 +1,4 @@
-import React from 'react'
-
-const IconAvatar = (props: any) => {
+const HeroAvatar = (props: any) => {
   return (
     <svg
       width="200px"
@@ -126,4 +124,4 @@ const IconAvatar = (props: any) => {
   )
 }
 
-export default IconAvatar
+export default HeroAvatar

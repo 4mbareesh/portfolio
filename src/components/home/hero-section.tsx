@@ -1,5 +1,4 @@
-import IconAvatar from '@/assets/icon-avatar'
-import Button from '../ui/button'
+import HeroAvatar from '@/components/assets/hero-avatar'
 // import Image from 'next/image'
 
 const HeroSection = () => {
@@ -15,7 +14,7 @@ const HeroSection = () => {
             className='relative rounded-full'
             alt='coder'
           /> */}
-          <IconAvatar className="relative" />
+          <HeroAvatar className="relative" />
         </div>
         <section className="flex flex-col gap-4 p-4">
           <h1 className="text-3xl font-black tracking-wider text-verdant-fg">
@@ -44,9 +43,6 @@ const HeroSection = () => {
             contributing to the ever-evolving field of
             <span className="text-verdant-green"> web</span> development.
           </div>
-          {/* <div className='flex md:justify-end'>
-            <Button />
-          </div> */}
         </section>
       </div>
     </main>
