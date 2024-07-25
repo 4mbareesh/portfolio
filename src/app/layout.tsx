@@ -9,10 +9,16 @@ export const metadata: Metadata = {
   description: 'Minimal portfolio powered by Next.js',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang='en'>
-      <body className={poppins.className}>{children}</body>
+    <html lang="en">
+      <body className={`${poppins.className} bg-verdant-bg`}>
+        <div className="container mx-auto">{children}</div>
+      </body>
     </html>
   )
 }

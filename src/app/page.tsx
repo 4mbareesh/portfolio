@@ -6,9 +6,9 @@ import ParticlesBg from '@/components/ui/particles-bg'
 
 export default function Home() {
   return (
-    <div className='flex flex-col min-h-screen select-none bg-verdant-bg'>
-      <Toaster position='top-center' reverseOrder={false} />
+    <div className="flex min-h-screen select-none flex-col">
       <ParticlesBg />
+      <Toaster position="top-center" reverseOrder={false} />
       <Navbar />
       <HeroSection />
       <Footer />

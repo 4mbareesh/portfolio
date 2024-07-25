@@ -1,12 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
-import type { Container, RecursivePartial, IOptions } from '@tsparticles/engine'
+import { type Container, type ISourceOptions } from '@tsparticles/engine'
 import { loadFull } from 'tsparticles'
 import ParticlesConfig from '@/config/particles-config'
-
-const options = ParticlesConfig as RecursivePartial<IOptions>
 
 const ParticlesBg = () => {
   const [init, setInit] = useState(false)
@@ -20,10 +18,19 @@ const ParticlesBg = () => {
     })
   }, [])
 
-  const particlesLoaded = async (container?: Container) => {}
+  const particlesLoaded = async (container?: Container): Promise<void> => {}
+
+  const options: ISourceOptions = useMemo(() => ParticlesConfig, [])
 
   if (init) {
-    return <Particles id='tsparticles' particlesLoaded={particlesLoaded} options={options} />
+    return (
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
+        className="z-10"
+      />
+    )
   }
 
   return <></>

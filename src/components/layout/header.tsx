@@ -38,17 +38,23 @@ function Navbar() {
     },
   ]
   return (
-    <header id='navbar' className='flex justify-around w-full lg:mx-auto h-14'>
-      <div className='my-auto'>
-        <span className='text-verdant-fg'>
-          ambareesh<span className='text-verdant-blue'>.me</span>
+    <header
+      id="navbar"
+      className="flex h-14 w-full justify-between px-4 lg:px-10"
+    >
+      <div className="my-auto">
+        <span className="text-verdant-fg">
+          ambareesh<span className="text-verdant-blue">.me</span>
         </span>
       </div>
-      <div className='flex items-center'>
-        <ul className='flex justify-around w-full gap-3'>
+      <div className="flex items-center">
+        <ul className="flex w-full justify-around gap-3">
           {socialLinks.map((data) => (
-            <li key={data.id} className='transition duration-200 hover:scale-110'>
-              <a href={data.href} target='_blank'>
+            <li
+              key={data.id}
+              className="transition duration-200 hover:scale-110"
+            >
+              <a href={data.href} target="_blank">
                 {data.icon}
               </a>
             </li>
