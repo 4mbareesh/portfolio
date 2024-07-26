@@ -3,9 +3,9 @@ import HeroAvatar from '@/components/assets/hero-avatar'
 
 const HeroSection = () => {
   return (
-    <main id="main" className="flex flex-grow justify-center">
+    <main id="main" className="flex justify-center">
       <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-10 lg:px-10">
-        <div className="relative">
+        <div className="relative -z-10">
           <div className="absolute inset-3 animate-pulse rounded-full bg-verdant-blue blur-3xl" />
           {/* <Image
             src='/coder.jpg'

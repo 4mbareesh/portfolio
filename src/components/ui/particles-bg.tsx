@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { type Container, type ISourceOptions } from '@tsparticles/engine'
 import { loadFull } from 'tsparticles'
-import ParticlesConfig from '@/config/particles-config'
+import ParticlesConfig from '@/lib/config/particles-config'
 
 const ParticlesBg = () => {
   const [init, setInit] = useState(false)
@@ -28,7 +28,6 @@ const ParticlesBg = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="z-10"
       />
     )
   }

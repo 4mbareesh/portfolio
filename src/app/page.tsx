@@ -5,11 +5,13 @@ import ParticlesBg from '@/components/ui/particles-bg'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen select-none flex-col">
+    <>
       <ParticlesBg />
-      <Navbar />
-      <HeroSection />
-      <Footer />
-    </div>
+      <div className="grid min-h-dvh grid-rows-[auto_1fr_auto]">
+        <Navbar />
+        <HeroSection />
+        <Footer />
+      </div>
+    </>
   )
 }
