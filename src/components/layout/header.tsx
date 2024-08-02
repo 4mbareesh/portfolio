@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { iSocialLink } from '@/types'
 
 function Navbar() {
-  const className = 'size-4 sm:size-5 fill-white'
+  const className = 'size-4 sm:size-5 fill-verdant-white'
   const socialLinks: iSocialLink[] = [
     {
       id: 1,
