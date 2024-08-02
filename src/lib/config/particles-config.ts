@@ -93,7 +93,7 @@ const ParticlesConfig: ISourceOptions = {
         type: 'images',
         options: {
           images: {
-            src: '/images/cyan_amongus.png',
+            src: '/images/cyan_amongus.avif',
             width: 500,
             height: 634,
           },
