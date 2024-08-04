@@ -4,17 +4,13 @@ const HeroSection = () => {
   return (
     <main id="main" className="flex justify-center">
       <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-10 lg:px-10">
-        <div className="relative -z-10">
-          <div className="absolute inset-3 animate-pulse rounded-full bg-verdant-blue blur-3xl" />
+        <div className="relative -z-20">
+          <div className="absolute inset-8 animate-pulse bg-verdant-blue blur-3xl" />
           <HeroAvatar className="relative" />
         </div>
         <section className="flex flex-col gap-4 p-4">
           <h1 className="text-3xl font-black tracking-wider text-verdant-fg">
-            Heya! I&apos;m{' '}
-            <span className="text-verdant-blue transition duration-200 hover:scale-105">
-              Ambareesh
-            </span>
-            !
+            Heya! I&apos;m <span className="text-verdant-blue">Ambareesh</span>!
           </h1>
           <div className="text-base leading-relaxed text-verdant-fg-dark">
             A <span className="text-verdant-orange">Full Stack Developer</span>{' '}
