@@ -1,7 +1,10 @@
 import Footer from '@/components/layout/footer'
 import HeroSection from '@/components/home/hero-section'
 import Navbar from '@/components/layout/header'
-import ParticlesBg from '@/components/ui/particles-bg'
+import dynamic from 'next/dynamic'
+const ParticlesBg = dynamic(() => import('@/components/ui/particles-bg'), {
+  ssr: false,
+})
 
 export default function Home() {
   return (

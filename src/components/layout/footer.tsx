@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Footer() {
   return (
     <footer className="flex h-14 w-full justify-center text-sm sm:text-base">
