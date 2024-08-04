@@ -40,8 +40,8 @@ const HeroSection = () => {
             like <span className="text-verdant-green">MongoDB</span> and{' '}
             <span className="text-verdant-purple">MySQL</span>. With a dedicated
             focus on delivering high-quality solutions, I am excited about
-            contributing to the ever-evolving field of
-            <span className="text-verdant-green"> web</span> development.
+            contributing to the ever-evolving field of{' '}
+            <span className="text-verdant-green">web</span> development.
           </div>
         </section>
       </div>
