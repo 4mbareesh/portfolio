@@ -13,16 +13,13 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@tsparticles/engine": "^3.5.0",
-    "@tsparticles/react": "^3.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.4.0",
-    "tsparticles": "^3.5.0"
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.2.5",

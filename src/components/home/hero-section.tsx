@@ -1,5 +1,4 @@
 import HeroAvatar from '@/components/assets/hero-avatar'
-// import Image from 'next/image'
 
 const HeroSection = () => {
   return (
@@ -7,13 +6,6 @@ const HeroSection = () => {
       <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-10 lg:px-10">
         <div className="relative -z-10">
           <div className="absolute inset-3 animate-pulse rounded-full bg-verdant-blue blur-3xl" />
-          {/* <Image
-            src='/coder.jpg'
-            width={500}
-            height={500}
-            className='relative rounded-full'
-            alt='coder'
-          /> */}
           <HeroAvatar className="relative" />
         </div>
         <section className="flex flex-col gap-4 p-4">
