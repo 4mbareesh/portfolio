@@ -7,7 +7,7 @@ import IconX from '@/components/assets/icons/icon-x'
 
 type IconProps = React.HTMLAttributes<SVGElement>
 
-const className = 'fill-white size-full'
+const className = 'fill-verdant-bg dark:fill-white size-full'
 
 const Icons = {
   github: (props: IconProps) => <IconGithub className={className} {...props} />,
