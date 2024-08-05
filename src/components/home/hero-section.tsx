@@ -1,30 +1,22 @@
 import HeroAvatar from '@/components/assets/hero-avatar'
-// import Image from 'next/image'
 
 const HeroSection = () => {
   return (
     <main id="main" className="flex justify-center">
       <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-10 lg:px-10">
-        <div className="relative -z-10">
-          <div className="absolute inset-3 animate-pulse rounded-full bg-verdant-blue blur-3xl" />
-          {/* <Image
-            src='/coder.jpg'
-            width={500}
-            height={500}
-            className='relative rounded-full'
-            alt='coder'
-          /> */}
+        <div className="relative -z-20">
+          <div className="absolute inset-8 hidden animate-pulse bg-verdant-blue blur-3xl dark:block" />
           <HeroAvatar className="relative" />
         </div>
         <section className="flex flex-col gap-4 p-4">
-          <h1 className="text-3xl font-black tracking-wider text-verdant-fg">
+          <h1 className="text-3xl font-black tracking-wider text-verdant-bg dark:text-verdant-fg">
             Heya! I&apos;m{' '}
-            <span className="text-verdant-blue transition duration-200 hover:scale-105">
+            <span className="text-verdant-blue selection:text-verdant-red">
               Ambareesh
             </span>
             !
           </h1>
-          <div className="text-base leading-relaxed text-verdant-fg-dark">
+          <div className="text-base leading-relaxed text-verdant-bg dark:text-verdant-fg-dark">
             A <span className="text-verdant-orange">Full Stack Developer</span>{' '}
             from Kerala, India. I am passionate about crafting web applications
             and proficient in various programming languages, including{' '}
@@ -40,8 +32,8 @@ const HeroSection = () => {
             like <span className="text-verdant-green">MongoDB</span> and{' '}
             <span className="text-verdant-purple">MySQL</span>. With a dedicated
             focus on delivering high-quality solutions, I am excited about
-            contributing to the ever-evolving field of
-            <span className="text-verdant-green"> web</span> development.
+            contributing to the ever-evolving field of{' '}
+            <span className="text-verdant-green">web</span> development.
           </div>
         </section>
       </div>
