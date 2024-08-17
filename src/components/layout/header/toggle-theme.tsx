@@ -1,9 +1,15 @@
 'use client'
 
-import { Switch } from '@/components/ui/switch'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { Moon, Sun } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
 
 function ToggleTheme() {
   const { setTheme, resolvedTheme } = useTheme()
@@ -11,16 +17,28 @@ function ToggleTheme() {
   useEffect(() => {
     setIsMounted(true)
   }, [])
-  if (!isMounted) return <div className='bg-verdant-fg-dark/20 dark:bg-zinc-200/20 animate-pulse h-6 w-11 rounded-full backdrop-blur-3xl'/>
+  if (!isMounted) return <Button variant="outline" size="icon" disabled />
   return (
-    <Switch
-      onCheckedChange={() =>
-        setTheme(resolvedTheme === 'light' ? 'dark' : 'light')
-      }
-      checked={resolvedTheme === 'dark' ? true : false}
-      icon={resolvedTheme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
-      variant='theme'
-    />
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" size="icon">
+          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => setTheme('light')}>
+          Light
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme('dark')}>
+          Dark
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme('system')}>
+          System
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   )
 }
 
