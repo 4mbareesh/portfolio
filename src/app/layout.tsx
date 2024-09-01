@@ -6,8 +6,8 @@ import Providers from './providers'
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Minimal portfolio of ambareesh powered by Next.js',
+  title: 'Ambareesh | Portfolio',
+  description: 'Minimal portfolio of Ambareesh powered by Next.js',
 }
 
 export default function RootLayout({
