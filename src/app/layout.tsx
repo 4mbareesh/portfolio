@@ -2,12 +2,18 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 import Providers from './providers'
+import dynamic from 'next/dynamic'
+import Header from '@/components/layout/header'
+import Footer from '@/components/layout/footer'
+const HeroBg = dynamic(() => import('@/components/home/hero-bg'), {
+  ssr: false,
+})
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Minimal portfolio of ambareesh powered by Next.js',
+  title: 'Ambareesh A | Portfolio',
+  description: 'Minimal portfolio of Ambareesh A, powered by Next.js',
 }
 
 export default function RootLayout({
@@ -21,7 +27,12 @@ export default function RootLayout({
         className={`${poppins.className} bg-background selection:bg-verdant-blue selection:text-white`}
       >
         <Providers>
-          <div className="container mx-auto">{children}</div>
+          <HeroBg />
+          <div className="container z-0 mx-auto grid min-h-dvh grid-rows-[auto_1fr_auto]">
+            <Header />
+            {children}
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>
