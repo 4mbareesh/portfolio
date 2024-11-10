@@ -2,11 +2,13 @@ import Link from 'next/link'
 
 function Notfound() {
   return (
-    <div className='grid h-screen px-4 bg-verdant-bg place-content-center'>
-      <h1 className='tracking-widest uppercase text-verdant-fg'>404 | Not Found</h1>
+    <div className="grid place-content-center gap-5">
+      <h1 className="text-xl uppercase tracking-widest text-verdant-bg selection:bg-verdant-red dark:text-verdant-fg">
+        404 | Not Found
+      </h1>
       <Link
-        className='p-2 my-5 tracking-widest text-center uppercase transition duration-500 rounded-md bg-verdant-blue hover:scale-105'
-        href='/'
+        className="rounded-md border border-transparent bg-verdant-blue p-2 text-center font-bold uppercase tracking-widest text-verdant-fg transition duration-500 hover:scale-105 hover:border-verdant-blue hover:bg-transparent hover:text-verdant-bg dark:hover:text-verdant-fg dark:hover:backdrop-blur-[2px]"
+        href="/"
       >
         Go Home
       </Link>
