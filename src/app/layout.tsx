@@ -5,9 +5,7 @@ import Providers from './providers'
 import dynamic from 'next/dynamic'
 import Header from '@/components/layout/header'
 import Footer from '@/components/layout/footer'
-const HeroBg = dynamic(() => import('@/components/home/hero-bg'), {
-  ssr: false,
-})
+const HeroBg = dynamic(() => import('@/components/home/hero-bg'))
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
