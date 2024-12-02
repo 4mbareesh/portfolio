@@ -4,9 +4,13 @@ const HeroSection = () => {
   return (
     <main id="main" className="flex justify-center">
       <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-10 lg:px-10">
-        <div className="relative -z-20">
-          <div className="absolute inset-8 hidden animate-pulse bg-verdant-blue blur-3xl dark:block" />
-          <HeroAvatar className="relative" />
+        <div
+        // className="relative -z-20"
+        >
+          {/* <div className="absolute inset-8 hidden animate-pulse bg-verdant-blue blur-3xl dark:block" /> */}
+          <HeroAvatar
+          // className="relative"
+          />
         </div>
         <section className="flex flex-col gap-4 p-4">
           <h1 className="text-3xl font-black tracking-wider text-verdant-bg dark:text-verdant-fg">
