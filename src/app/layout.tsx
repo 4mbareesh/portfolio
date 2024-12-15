@@ -10,8 +10,19 @@ const HeroBg = dynamic(() => import('@/components/home/hero-bg'))
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
-  title: 'Ambareesh A | Portfolio',
+  title: {
+    default: 'Ambareesh A | Portfolio',
+    template: '%s | Ambareesh',
+  },
   description: 'Minimal portfolio of Ambareesh A, powered by Next.js',
+  keywords: [
+    'Ambareesh',
+    'Ambareesh A',
+    'Portfolio',
+    'Ambareesh portfolio',
+    'Portfolio Ambareesh',
+    'Portfolio Ambareesh A',
+  ],
 }
 
 export default function RootLayout({
