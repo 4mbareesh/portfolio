@@ -8,7 +8,7 @@ function Header() {
     >
       <div className="my-auto text-sm sm:text-base">
         <span className="text-verdant-bg dark:text-verdant-fg">
-          ambareesh<span className="text-verdant-blue">.me</span>
+          ambareesh<span className="text-verdant-blue">.dev</span>
         </span>
       </div>
       <div className="flex items-center">
