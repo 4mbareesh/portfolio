@@ -21,23 +21,26 @@ const HeroSection = () => {
             !
           </h1>
           <div className="text-base leading-relaxed text-verdant-bg dark:text-verdant-fg-dark">
-            A <span className="text-verdant-orange">Full Stack Developer</span>{' '}
-            from Kerala, India. I am passionate about crafting web applications
-            and proficient in various programming languages, including{' '}
-            <span className="text-verdant-blue transition-all duration-200 hover:scale-105">
+            A versatile{' '}
+            <span className="text-verdant-orange">Full Stack Developer</span>{' '}
+            from Kerala, India, specializing in building and deploying scalable
+            web applications. With expertise in{' '}
+            <span className="text-verdant-green transition-all duration-200 hover:scale-105">
               JavaScript
             </span>
             , <span className="text-verdant-red">TypeScript</span>,{' '}
-            <span className="text-verdant-purple">Python</span>. Moreover, I am
-            well-versed in a range of web development frameworks and tools, such
-            as <span className="text-verdant-orange">React.js</span>,{' '}
-            <span className="text-verdant-blue">Next.js</span> etc.
-            Additionally, my expertise extends to database management systems
-            like <span className="text-verdant-green">MongoDB</span> and{' '}
-            <span className="text-verdant-purple">MySQL</span>. With a dedicated
-            focus on delivering high-quality solutions, I am excited about
-            contributing to the ever-evolving field of{' '}
-            <span className="text-verdant-green">web</span> development.
+            <span className="text-verdant-green">Python</span>, and modern
+            frameworks like <span className="text-verdant-blue">React.js</span>{' '}
+            and <span className="text-verdant-orange">Next.js</span>, I deliver
+            efficient and user-friendly solutions. My experience includes
+            managing databases such as{' '}
+            <span className="text-verdant-green">MongoDB</span> and{' '}
+            <span className="text-verdant-purple">MySQL</span>, and deploying
+            applications using modern cloud solutions like{' '}
+            <span className="text-verdant-red">AWS</span> and containerization
+            tools like <span className="text-verdant-blue">Docker</span>. I am
+            dedicated to developing high-quality software and excel in dynamic,
+            collaborative environments.
           </div>
         </section>
       </div>
